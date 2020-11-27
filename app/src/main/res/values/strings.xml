@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SajhaDabali</string>
+    <string name="title_top">Top News</string>
+    <string name="title_category">Category</string>
+    <string name="title_favourite">Favourite</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_empty_item" >You haven\'t saved any news!!!</string>
+    <string name="title_no_internet">No Internet or Check your connectivity</string>
+</resources>

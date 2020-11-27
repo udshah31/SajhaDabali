@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/nav_top">
+
+
+    <fragment
+        android:id="@+id/nav_top"
+        android:name="com.example.sajhadabali.ui.fragments.TopFragment"
+        android:label="TopFragment"
+        tools:layout="@layout/fragment_top" >
+        <action
+            android:id="@+id/action_nav_top_to_nav_detail"
+            app:destination="@id/nav_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.sajhadabali.ui.fragments.CategoryFragment"
+        android:label="CategoryFragment"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_nav_category_to_nav_categoryListItem"
+            app:destination="@id/nav_categoryListItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_favourite"
+        android:name="com.example.sajhadabali.ui.fragments.FavouriteFragment"
+        android:label="FavouriteFragment"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_nav_favourite_to_nav_detail"
+            app:destination="@id/nav_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.sajhadabali.ui.fragments.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_categoryListItem"
+        android:name="com.example.sajhadabali.ui.fragments.CategoryListItemFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_category_list_item" >
+        <argument
+            android:name="category"
+            app:argType="com.example.sajhadabali.model.category.Category" />
+        <action
+            android:id="@+id/action_nav_categoryListItem_to_nav_detail"
+            app:destination="@id/nav_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_splash"
+        android:name="com.example.sajhadabali.ui.fragments.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_nav_splash_to_nav_top"
+            app:destination="@id/nav_top"
+            app:popUpTo="@id/nav_splash"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.example.sajhadabali.ui.fragments.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="news"
+            app:argType="com.example.sajhadabali.model.news.News" />
+    </fragment>
+
+</navigation>

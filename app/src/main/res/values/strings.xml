@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">SajhaDabali</string>
     <string name="title_top">Top News</string>
     <string name="title_category">Category</string>
@@ -6,4 +6,28 @@
     <string name="title_menu">Menu</string>
     <string name="title_empty_item" >You haven\'t saved any news!!!</string>
     <string name="title_no_internet">No Internet or Check your connectivity</string>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">About</string>
+    <string name="summary_about">We are a team of like-minded people, specialized in development of Android App Development creating new trends across the app space. Glad to Help in anyway!</string>
+    <string name="app_version">3.5</string>
+    <string name="summary_support">Got any queries? We are happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="title_faq">FAQ</string>
+    <string name="summary_faq">View frequently asked questions</string>
+    <string name="url_faq">http://www.sajhadabali.com/</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="url_privacy">http://www.sajhadabali.com/</string>
+    <string name="title_terms">Terms &amp; Conditions</string>
+    <string name="url_terms">http://www.sajhadabali.com/</string>
+    <string name="title_version">Version</string>
+    <string name="choose_email_client">Choose email client</string>
+    <string name="title_new_notification_sound">Message Notification</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="summary_vibrate">Vibrate On Notification</string>
+    <string name="notifications_new_message">notifications_new_message</string>
 </resources>

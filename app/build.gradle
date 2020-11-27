@@ -82,7 +82,11 @@ dependencies {
     //roundImage
     implementation 'com.makeramen:roundedimageview:2.3.0'
 
-    //lottipie
+    //Lotti pie
     implementation 'com.airbnb.android:lottie:3.5.0'
+
+    //Preference
+    implementation "androidx.preference:preference-ktx:1.1.1"
+
 
 }
